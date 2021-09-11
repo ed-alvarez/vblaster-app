@@ -1,0 +1,90 @@
+.login {
+	min-height: 100vh;
+	background: #fff;
+
+	.login-content {
+		max-width: 25em;
+		margin: 9em auto 0;
+
+		@media (max-width: 720px) {
+			padding-left: 25px;
+			padding-right: 25px;
+		}
+
+		.logo {
+			display: block;
+			background: url("~assets/img/logo-xl.png") no-repeat;
+			background-size: contain;
+			background-position: center center;
+			width: 8em;
+			height: 5em;
+			margin: 0 auto .5em;
+		}
+
+		.c-form {
+			margin-top: 1em;
+
+			.links-container {
+				display: inline-block;
+				margin-bottom: 1.5em;
+
+				.login-link {
+					text-decoration: none;
+					color: #343747;
+					font-weight: 700;
+					font-size: 20pt;
+				}
+			}
+
+			.w-input {
+				&:not(:last-child) {
+					margin-bottom: 1em;
+				}
+
+				.c-input {
+					width: 100%;
+					border: 1px solid #d5d5e3;
+					border-radius: 5px;
+					padding: 10px 13px;
+					font-size: 11pt;
+					font-weight: 400;
+					color: #000;
+					transition: border-color 0.125s ease-in-out;
+
+					&::placeholder {
+						color: #bfbfce;
+					}
+
+					&:focus,
+					&:active {
+						outline: 0;
+						border-color: #4cabff;
+					}
+				}
+			}
+
+			.forgotten-password {
+				display: block;
+				text-decoration: underline;
+				font-size: 10pt;
+				color: #9c9cb2;
+				margin: 2em 0;
+			}
+
+			.btn {
+				padding: 13px 35px;
+
+				&.btn-success {
+					background: #27d086;
+					border: none;
+
+					&:active,
+					&:focus {
+						outline: 0;
+						box-shadow: none;
+					}
+				}
+			}
+		}
+	}
+}

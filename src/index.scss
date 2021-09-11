@@ -1,0 +1,24 @@
+$fa-font-path: "~@fortawesome/fontawesome-pro/webfonts";
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap");
+
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~@fortawesome/fontawesome-pro/scss/fontawesome.scss";
+@import "~@fortawesome/fontawesome-pro/scss/solid.scss";
+@import "~@fortawesome/fontawesome-pro/scss/regular.scss";
+@import "~@fortawesome/fontawesome-pro/scss/light.scss";
+@import "~@fortawesome/fontawesome-pro/scss/brands.scss";
+
+body {
+	background: #f6f8ff;
+	font-family: "Montserrat", sans-serif;
+	color: #343b5c;
+}
+
+section {
+	margin-top: 2em;
+}
+
+#root {
+	min-height: 100vh;
+}

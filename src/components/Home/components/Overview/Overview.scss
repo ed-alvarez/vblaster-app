@@ -1,0 +1,52 @@
+.btn-header {
+	margin-top: 2em;
+	margin-bottom: 2em;
+
+	@media (max-width: 992px) {
+		text-align: center;
+	}
+
+	button:not(:last-child) {
+		margin-right: 1.2em;
+
+		@media (max-width: 767px) {
+			margin-right: 5px;
+		}
+	}
+
+	.right-menu {
+		float: right;
+
+		@media (max-width: 992px) {
+			margin-top: 25px;
+			float: none;
+		}
+
+		span.total-pages {
+			font-size: 10pt;
+			margin-top: 2px;
+
+			@media (max-width: 992px) {
+				text-align: center;
+			}
+		}
+	}
+}
+
+.no-campaigns {
+	text-align: center;
+	margin: 0 auto;
+	padding-top: 10em;
+
+	.btn {
+		display: block;
+		margin: 2em auto;
+	}
+}
+
+.c-card {
+	background: #fff;
+	border-radius: 10px;
+	width: 100%;
+	box-shadow: 0 0 25px #ebebeb;
+}

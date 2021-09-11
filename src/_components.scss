@@ -1,0 +1,88 @@
+$fa-font-path: "~@fortawesome/fontawesome-pro/webfonts";
+@import "~@fortawesome/fontawesome-pro/scss/fontawesome.scss";
+@import "~@fortawesome/fontawesome-pro/scss/solid.scss";
+@import "~@fortawesome/fontawesome-pro/scss/regular.scss";
+@import "~@fortawesome/fontawesome-pro/scss/light.scss";
+@import "~@fortawesome/fontawesome-pro/scss/brands.scss";
+
+.row.c-row {
+	position: relative;
+
+	&:not(:last-child) {
+		padding-bottom: 3px;
+
+		&:after {
+			content: "";
+			position: absolute;
+			width: calc(100% - 30px);
+			height: 1px;
+			background: #f1f1f6;
+			bottom: 0;
+			left: 15px;
+		}
+	}
+}
+
+.btn {
+	font-size: 10pt;
+	letter-spacing: 0.5px;
+	font-weight: 500;
+
+	&.btn-add {
+		border: 1px solid #8c3cf6;
+		background: #8c3cf6;
+		padding: 10px 15px;
+		color: #fff;
+
+		&:hover {
+			background: #6d2ec0;
+			border-color: #6d2ec0;
+		}
+
+		i {
+			position: relative;
+			left: 0.5px;
+			line-height: 0 !important;
+			padding: 0;
+			color: #fff;
+			font-size: 9pt;
+		}
+	}
+
+	&.btn-outline {
+		background: transparent;
+		border: 1px solid #d4dae2;
+		color: #9fa4bb;
+		padding: 5px 10px;
+
+		&:hover {
+			background: #dddfe2;
+			border-color: #dddfe2;
+		}
+
+		&.active {
+			background: #8c3cf6;
+			border-color: #8c3cf6;
+			color: #fff;
+
+			&:hover {
+				background: #7732d3;
+				border-color: #7732d3;
+			}
+		}
+	}
+}
+
+
+.c-alert {
+	margin-bottom: 1em;
+	padding: 1.5em 2em;
+	background: #dddfe2;
+	border-radius: 5px;
+	font-size: 10pt;
+
+	&.danger {
+		background: #ff6767;
+		color: #fff;
+	}
+}

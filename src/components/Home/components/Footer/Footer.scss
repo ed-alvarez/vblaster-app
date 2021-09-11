@@ -1,0 +1,52 @@
+$fa-font-path: "~@fortawesome/fontawesome-pro/webfonts";
+@import "~@fortawesome/fontawesome-pro/scss/fontawesome.scss";
+@import "~@fortawesome/fontawesome-pro/scss/regular.scss";
+
+.footer {
+	position: relative;
+	bottom: 0;
+	background: #fff;
+	width: 100%;
+	padding: 2em 2em 1.5em;
+	box-shadow: 0 0 15px #ebebeb;
+
+	.logo {
+		display: inline-block;
+		background: url("~assets/img/logo.png") no-repeat;
+		background-size: contain;
+		background-position: center center;
+		width: 3em;
+		height: 2em;
+		vertical-align: middle;
+
+		@media (max-width: 992px) {
+			display: block;
+			text-align: center;
+			margin: 0 auto;
+			vertical-align: initial;
+		}
+	}
+
+	.cc {
+		position: relative;
+		color: #969bb6;
+		font-size: 9pt;
+
+		@media (max-width: 992px) {
+			display: block;
+			text-align: center;
+			margin-top: 15px;
+		}
+
+		&:before {
+			@extend %fa-icon;
+			@extend .far;
+			content: fa-content($fa-var-copyright);
+			margin-right: 5px;
+		}
+
+		b {
+			font-weight: 500;
+		}
+	}
+}

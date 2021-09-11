@@ -1,0 +1,129 @@
+.topbar {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	background: #fff;
+	padding: 10px;
+	box-shadow: 0 0 15px #ebebeb;
+
+	.container {
+		padding-left: 25px;
+		padding-right: 25px;
+
+		@media (max-width: 520px) {
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+	}
+
+	.logo {
+		display: inline-block;
+		background: url("~assets/img/logo-xl.png") no-repeat;
+		background-size: contain;
+		background-position: center center;
+		width: 6.5em;
+		height: 2em;
+		margin-top: 8px;
+		cursor: pointer;
+	}
+
+	.right-menu {
+		float: right;
+
+		.user-menu-toggle {
+			display: none;
+			margin-top: 10px;
+			line-height: 0;
+			cursor: pointer;
+
+			@media (max-width: 520px) {
+				display: inline-block;
+			}
+
+			i {
+				font-size: 20pt;
+			}
+		}
+
+		.user-menu {
+			display: flex;
+			align-items: center;
+
+			@media (max-width: 520px) {
+				display: none;
+			}
+
+			.notifications {
+				margin-right: 1em;
+				margin-left: 1.5em;
+				cursor: pointer;
+
+				i {
+					font-size: 16pt;
+				}
+			}
+
+			.divider {
+				height: 3em;
+				width: 1px;
+				background: #cacaca;
+				margin-left: 1.5em;
+				margin-right: 5px;
+			}
+
+			.user-dropdown {
+				margin-left: 1em;
+				user-select: none;
+
+				.username {
+					position: relative;
+					cursor: pointer;
+				}
+
+				i.far {
+					position: relative;
+					top: 1px;
+					margin-left: 10px;
+				}
+			}
+
+			.topbar-dropdown {
+				display: none;
+				position: absolute;
+				top: 4.3em;
+				right: -10px;
+				background: #fff;
+				padding: 0.7em;
+				width: 14em;
+				border-radius: 6px;
+				box-shadow: 0 0 15px #ebebeb;
+
+				&.toggled {
+					display: block;
+				}
+
+				.item {
+					font-size: 10pt;
+					font-weight: 500;
+					width: 100%;
+					padding: 5px 10px;
+					border-radius: 5px;
+					cursor: pointer;
+
+					&:not(:last-child) {
+						margin-bottom: 10px;
+					}
+
+					&:hover {
+						background: rgba(229, 231, 240, 0.4);
+					}
+
+					i {
+						float: right;
+						line-height: 1.4;
+					}
+				}
+			}
+		}
+	}
+}

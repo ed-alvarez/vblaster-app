@@ -1,0 +1,83 @@
+.campaign {
+	a.go-back {
+		text-decoration: underline;
+		color: #343b5c;
+	}
+
+	.campaign-card {
+		display: flex;
+		margin-top: 2em;
+		background: #fff;
+		border-radius: 10px;
+		width: 100%;
+		padding: 25px;
+		box-shadow: 0 0 25px #ebebeb;
+
+		.sidebar-menu {
+			position: relative;
+			min-height: 100%;
+			flex: 1;
+			margin-right: 3em;
+
+			@media (max-width: 767px) {
+				display: none;
+			}
+
+			&:after {
+				content: "";
+				position: absolute;
+				top: 0;
+				right: -1.4em;
+				width: 1px;
+				height: 100%;
+				background: #cacaca;
+			}
+
+			.menu-child {
+				position: relative;
+				display: inline-flex;
+				width: 100%;
+				padding: 5px 15px;
+				border-radius: 5px;
+				cursor: pointer;
+
+				&:not(:last-child) {
+					margin-bottom: 0.5em;
+
+					&:hover {
+						background: #f0f0f0;
+					}
+				}
+
+				&.delete {
+					color: #ff6767;
+
+					&:hover {
+						background: #fcebeb;
+					}
+				}
+
+				i {
+					position: relative;
+					top: 1px;
+					margin-right: 10px;
+				}
+
+				a,
+				span {
+					font-size: 13px;
+					font-weight: 500;
+				}
+
+				a {
+					color: #343b5c;
+					text-decoration: none;
+				}
+			}
+		}
+
+		.right-container {
+			flex: 7;
+		}
+	}
+}
